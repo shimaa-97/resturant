@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+
+        <link rel="stylesheet" href="/style/meal list.css">
+    </head>
+    <style>
+.innp{
+  
+  margin-top: 70px;
+  width:50px;
+  height: 50px;
+margin-left: 110px;
+margin-bottom: 5px;
+}
+.anchor{
+   font-weight: MV Boli;
+
+}
+.addbtn
+{
+    width: 50%;
+    height: 50px;
+    margin-left:350px;
+    text-align: center;
+    background-color: brown;
+    border-radius: 25px;
+    color: lemonchiffon;
+    padding: 5px;
+   
+}
+.bla{
+    border-radius: 20px;
+    background-color: brown;
+    color: lemonchiffon;
+    float: left;
+    font-family: Mv Boli;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+padding:15px ;
+}
+
+
+
+    </style>
+    <body>
+        <nav>
+
+            <a href="/order/addorder" >add order</a>
+    
+            <a href="/meal/addmeal">add meal</a>
+    
+            <a href="/order/orderlist" >order list</a>
+            <a href="/meal/editmeal">edit menu</a> 
+        </nav>
+        <br>
+    <form action="/order/orderlist" method="POST">
+    
+        
+            
+                <div class="contain">
+                  
+                      <% addmeals.forEach((meal)=>{%>     
+                        <div class=" bla">
+                            <h2 class="p"> <%=meal.mealname%></h2>
+                    
+                            <input  class="innp" type="checkbox" >
+                        </div>
+                        
+                          
+                          <%})%>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    
+                        <div>
+                            
+                            <button  class="addbtn"action><a  class=" anchor"href="/order/orderlist">add order</a></button>
+                        </div>         
+        </form>
+             
+        </body>
+    </html>
+               
+               
+
+               
+                
+                
+                
+            
+            

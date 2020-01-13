@@ -1,0 +1,20 @@
+body
+{
+    background-color: lightgray;
+}
+nav
+{
+    border:2px soild black;
+    background-color: brown;
+    width: 100%;
+    height: 50px;
+    flex-wrap: nowrap;
+}
+a
+{
+ margin-left: 40px;
+ padding-top: 30px;
+ color: cornsilk;
+ font-size: larger;
+ text-decoration: none;
+}

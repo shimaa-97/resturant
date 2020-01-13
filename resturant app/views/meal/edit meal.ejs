@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="/style/add-meal.css">
+    </head>
+    <body>
+        <nav>
+
+            <a href="/order/addorder" >add order</a>
+    
+            <a href="/meal/addmeal">add meal</a>
+    
+            <a href="/order/orderlist" >order list</a>
+            <a href="/meal/editmeal">edit menu</a>      
+        </nav>
+        <br>
+        <form action="/meal/edit" method="post">
+            <input type="text" placeholder="meal number"  name="id" class="mealname">
+            <br><br><br>
+            <input type="text" placeholder="meal name"  name="mealname" class="mealname"> 
+            <br><br><br>
+            <input type="text" placeholder="Meal Description" name="description" class="description" >
+            <br><br><br>
+            <input type="text" placeholder="meal price" name="price"  class="mealname">
+            <br><br><br>
+            <input type="submit" value="Edit"  class="addbtn">
+        </form>
+        
+            
+    </body>
+</html>
